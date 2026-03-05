@@ -67,8 +67,8 @@ int main() {
     printf("PIB (Bilhões de Reais): \n");
     scanf("%f",&pib1);
 
-    // Corrigindo o valor para biolhões. Usuário entrará com um número decimal de bilhão
-    
+    // Corrigindo o valor para bilhões. Usuário entrará com um número decimal de bilhão
+
     pib1 = pib1 * 1000000000; 
 
     printf("Número de Pontos Turísticos: \n");
@@ -99,6 +99,10 @@ int main() {
     printf("PIB (Bilhões de Reais): \n");
     scanf("%f",&pib2);
 
+    // Corrigindo o valor para bilhões. Usuário entrará com um número decimal de bilhão
+
+    pib2 = pib2 * 1000000000; 
+
     printf("Número de Pontos Turísticos: \n");
     scanf("%d",&pnt2);
 
@@ -128,7 +132,7 @@ int main() {
     printf("Nome da Cidade: %s \n",cid1);
     printf("População: %d \n",pop1);
     printf("Área: %.2f Km^2\n",area1);
-    printf("PIB: %.2f Bilhões de Reais\n",pib1);
+    printf("PIB: %.2f Bilhões de Reais\n",pib1/1000000000);
     printf("Número de Pontos Turísticos: %d \n",pnt1);
     printf("Densidade Populacional: %.2f hab/Km^2\n",dens1);
     printf("PIB per Capita: %.2f Reais\n",pibc1);
@@ -143,7 +147,7 @@ int main() {
     printf("Nome da Cidade: %s \n",cid2);
     printf("População: %d \n",pop2);
     printf("Área: %.2f Km^2\n",area2);
-    printf("PIB: %.2f Bilhões de Reais\n",pib2);
+    printf("PIB: %.2f Bilhões de Reais\n",pib2/1000000000);
     printf("Número de Pontos Turísticos: %d \n",pnt2);
     printf("Densidade Populacional: %.2f hab/Km^2\n",dens2);
     printf("PIB per Capita: %.2f Reais\n",pibc2);
@@ -181,7 +185,8 @@ int main() {
     printf("Super Poder: Carta %d Venceu - (%d) \n",(2-comSuper),comSuper);
     
     printf(" \n");
-    printf("Obrigado por participar do Super Trunfo!");
+    printf("Obrigado por participar do Super Trunfo!\n");
+    printf(" \n");
 
     return 0;
 
