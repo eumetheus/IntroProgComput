@@ -67,6 +67,10 @@ int main() {
     printf("PIB (Bilhões de Reais): \n");
     scanf("%f",&pib1);
 
+    // Corrigindo o valor para biolhões. Usuário entrará com um número decimal de bilhão
+    
+    pib1 = pib1 * 1000000000; 
+
     printf("Número de Pontos Turísticos: \n");
     scanf("%d",&pnt1);
 
