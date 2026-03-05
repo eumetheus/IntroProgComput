@@ -5,7 +5,7 @@ int main() {
     // Variáveis para as notas
 
     int nota1, nota2, nota3;
-    int media;
+    float media;
 
     printf("**** Programa de Cálculo de Média *****\n");
     printf(" \n");
@@ -23,10 +23,10 @@ int main() {
 
     // Calculando a média
 
-    media = (nota1 + nota2 + nota3)/3;
+    media = (float) (nota1 + nota2 + nota3)/3;
 
     printf(" \n");
-    printf("A sua média é %d", media);
+    printf("A sua média é %.2f", media);
 
 
 
