@@ -82,7 +82,9 @@ int main() {
     // Mostrando os dados das Cartas
     //-------------------------------
 
-    printf("\nExibindo os dados das Cartas \n");
+    printf("Exibindo os dados das Cartas: \n");
+    printf("-----------------------------\n");
+    printf(" \n");
 
     // Carta 1
 
@@ -95,7 +97,6 @@ int main() {
     printf("PIB: %.2f Bilhões de Reais\n",pib1);
     printf("Número de Pontos Turísticos: %d \n",pnt1);
 
-    printf(" \n");
     printf(" \n");
 
     // Carta 2
