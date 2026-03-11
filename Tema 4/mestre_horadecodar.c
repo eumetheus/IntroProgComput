@@ -6,8 +6,8 @@ void recursivo(int numero) {
 
     if (numero > 0) {
 
-        printf("%d ", numero);       // Imprime o valor atual de n
-        recursivo(numero - 1);   // Chama a si mesma com n - 1 -> Recursividade. A cada chamada, n decrementa 1
+        recursivo(numero - 1);      // Chama a si mesma com n - 1 -> Recursividade. A cada chamada, n decrementa 1
+        printf("%d \n", numero);    // Imprime o valor atual de n
     }
 }
  

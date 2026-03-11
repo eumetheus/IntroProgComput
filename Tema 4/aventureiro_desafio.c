@@ -7,7 +7,7 @@ int main() {
 
     Movimento da Torre
        
-    A Torre se movimenntará 5 casas para a DIREITA.
+    A Torre se movimenntará 5 casas para a direita.
 
     Vamos usar o FOR, pois o movimento ocorrerá 5 vezes.
 
@@ -31,7 +31,7 @@ int main() {
 
     Movimento do Bispo
     
-    O Bispo se movimentará 5 casas na diagonal para CIMA e DIREITA.
+    O Bispo se movimentará 5 casas na diagonal para cima e direita
     
     Vamos usar o WHILE para repetir o movimento. 
     Enquanto o contador for menor ou igual ao número de casas que o bispo deve percorrer.
@@ -62,9 +62,7 @@ int main() {
         
     Movimento da Rainha
     
-    A Rainha se movimentará 8 casas para a ESQUERDA.
-    
-    Utilizaremos o laço DO-WHILE.
+    A Rainha se movimentará 8 casas para a esquerda com Do... While.
 
     */
     
@@ -88,7 +86,7 @@ int main() {
     
     Movimento do Cavalo: Ele se move em "L".
     
-    Nestee programa, farei o cavalo se movimentar 2 casas para BAIXO e 1 casa para ESQUERDA
+    Nestee programa, farei o cavalo se movimentar 2 casas para baixo e 1 casa para esquerda
     
     Usarei 2 loops aninhados:
     
