@@ -10,7 +10,7 @@ int main() {
     // Matriz do tabuleiro
 
     int tabuleiro[10][10];
-    char linTabuleiro[10] = {'A','B','C','D','E','F','G','H','i','J'};
+    char colTabuleiro[10] = {'A','B','C','D','E','F','G','H','I','J'}; // Letras para as colunas do Tabuleiro
 
     // Vetores que representam os navios
 
@@ -27,11 +27,11 @@ int main() {
 
     // Transformando os valores das coordenadas para os índices corretos dos vetores (Decremento de uma unidade)
 
-    linIniHorizontal = linIniHorizontal-1;
-    colIniHorizontal = colIniHorizontal-1;
+    linIniHorizontal--;
+    colIniHorizontal--;
 
-    linIniVertical = linIniVertical-1;
-    colIniVertical = colIniVertical-1;
+    linIniVertical--;
+    colIniVertical--;
 
     
     // Variáveis para os Loops
@@ -53,7 +53,7 @@ int main() {
     // 2. Posicionar navio horizontal
     // -------------------------------
 
-    if (colIniHorizontal + tamNavio <= tamTabuleiro) { // Está dentro dos limites do tabuleiro
+    if (colIniHorizontal >= 0 && colIniHorizontal + tamNavio <= tamTabuleiro) { // Está dentro dos limites do tabuleiro
 
         int posiNavioHor = 1; 
 
@@ -62,7 +62,7 @@ int main() {
         for (i = 0; i < tamNavio; i++) {
             if (tabuleiro[linIniHorizontal][colIniHorizontal+ i] != 0) { // Encontrou uma parte de um navio
                 posiNavioHor = 0;
-                // break;
+                break;
             }
         }
 
@@ -88,14 +88,14 @@ int main() {
     // 3. Posicionar navio vertical
     // -------------------------------
 
-    if (linIniVertical + tamNavio <= tamTabuleiro) { // Está dentro dos limites do tabuleiro
+    if (linIniVertical >= 0 && linIniVertical + tamNavio <= tamTabuleiro) { // Está dentro dos limites do tabuleiro
 
         int posiNavioVer = 1;
 
         for (i = 0; i < tamNavio; i++) {
             if (tabuleiro[linIniVertical + i][colIniVertical] != 0) { // Encontrou uma parte de um navio
                 posiNavioVer = 0;
-                //break;
+                break;
             }
         }
 
@@ -123,8 +123,8 @@ int main() {
 
     printf("\n   ");
 
-    for ( int l = 0; l < 10; l++) {
-        printf("%c ",linTabuleiro[l]);
+    for ( int col = 0; col < tamTabuleiro; col++) {
+        printf("%c ",colTabuleiro[col]);
     }
 
     printf("\n \n");
