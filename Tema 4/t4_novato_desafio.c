@@ -1,13 +1,16 @@
+//-------------------------------------------------
+// Desafio Novato do tema 4: Jogo de Xadrez
+//-------------------------------------------------
+
 #include <stdio.h>
 
 int main() {
-
 
     /*
 
     Movimento da Torre
        
-    A Torre se movimenntará 5 casas para a direita.
+    A Torre se movimenntará 5 casas para a DIREITA.
 
     Vamos usar o FOR, pois o movimento ocorrerá 5 vezes.
 
@@ -31,7 +34,7 @@ int main() {
 
     Movimento do Bispo
     
-    O Bispo se movimentará 5 casas na diagonal para cima e direita
+    O Bispo se movimentará 5 casas na diagonal para CIMA e DIREITA.
     
     Vamos usar o WHILE para repetir o movimento. 
     Enquanto o contador for menor ou igual ao número de casas que o bispo deve percorrer.
@@ -62,7 +65,9 @@ int main() {
         
     Movimento da Rainha
     
-    A Rainha se movimentará 8 casas para a esquerda com Do... While.
+    A Rainha se movimentará 8 casas para a ESQUERDA.
+    
+    Utilizaremos o laço DO-WHILE.
 
     */
     
@@ -80,51 +85,6 @@ int main() {
         contadorRainha++;
 
     } while(contadorRainha <= casasRainha); // Se o contador for menor ou igual ao número de casas, continua
-
-
-    /*
-    
-    Movimento do Cavalo: Ele se move em "L".
-    
-    Nestee programa, farei o cavalo se movimentar 2 casas para baixo e 1 casa para esquerda
-    
-    Usarei 2 loops aninhados:
-    
-    - Loop externo (FOR)   → controla o movimento vertical
-    - Loop interno (WHILE) → controla o movimento horizontal
-
-    */
-    
-    int mVer = 2; // duas casas para baixo
-    int mHor = 1; // uma casa para esquerda
-
-    int pVer;
-    int pHor;
-
-    printf("Movimento do Cavalo:\n");
-
-    // Loop externo (for) para o movimento vertical
-
-    for(pVer = 1; pVer <= mVer; pVer++) { // Movimento vertical inicializa com 1 e será realizaado até o número de passos verticais (2)
-
-        printf("Baixo\n");
-
-        // Após completar as duas casas para baixo, inicia o movimento horizontal.
-
-        if(pVer == mVer) { // pver = mvber = 2
-
-            pHor = 1; // Um passo horizontal
-
-            // Loop interno (while)
-
-            while(pHor <= mHor) { // enquanto passo horizontal for igual a movimento para a esquerda (1)
- 
-                printf("Esquerda\n");
-
-                pHor++;
-            }
-        }
-    }
 
     printf("\n");
 

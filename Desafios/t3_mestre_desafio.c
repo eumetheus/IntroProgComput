@@ -1,3 +1,7 @@
+//-------------------------------------------------------------------
+// Desafio Mestre do tema 3 :Criando as Cartas do Super Trunfo
+//-------------------------------------------------------------------
+
 #include <stdio.h>
 #include <stdlib.h>
 

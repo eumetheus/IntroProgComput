@@ -1,3 +1,8 @@
+//-----------------------------------------------
+// Desafio Aventureiro do tema 5: Batalha Naval
+//-----------------------------------------------
+
+
 #include <stdio.h>
 
 // Definições do Tabuleiro e Navio

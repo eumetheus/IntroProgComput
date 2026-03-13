@@ -1,5 +1,5 @@
 //--------------------------------------------------------------
-// Desafio Novato do tema 2 :Criando as Cartas do Super Trunfo
+// Desafio Novato do tema 3 :Criando as Cartas do Super Trunfo
 //--------------------------------------------------------------
 
 #include <stdio.h>

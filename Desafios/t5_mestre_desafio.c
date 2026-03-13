@@ -1,3 +1,7 @@
+//-----------------------------------------------
+// Desafio Mestre do tema 5: Batalha Naval
+//-----------------------------------------------
+
 #include <stdio.h>
 #include <stdlib.h>
 
