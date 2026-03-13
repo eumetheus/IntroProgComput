@@ -77,11 +77,13 @@ int main() {
         } else {
 
             printf("Erro: Sobreposição no navio horizontal.\n");
+            return 0;
         }
 
     } else {
 
         printf("Erro: Navio horizontal fora do tabuleiro.\n");
+        return 0;
     }
 
     // -------------------------------
@@ -105,10 +107,12 @@ int main() {
             }
         } else {
             printf("Erro: Sobreposição no navio vertical.\n");
+            return 0;
         }
 
     } else {
         printf("Erro: Navio vertical fora do tabuleiro.\n");
+        return 0;
     }
 
     // -------------------------------
